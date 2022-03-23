@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <img :src="bookThumb" :alt="bookTitolo">
         <h3>{{ bookTitolo }}</h3>
     </div>
@@ -16,5 +16,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    width: calc(100% /6);
+    .container{
+        width: calc(100% /6);
+        margin-top: 100px;
+        background-color:black ;
+    }
 </style>

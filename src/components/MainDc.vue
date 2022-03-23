@@ -1,19 +1,24 @@
 <template>
     <main>
-        <div class="container"></div>
-        <div class="voa">
+        <div class="jambo"></div>
+        <div class="card">
             <CardDc v-for="card in cards" :key="card.series"  :book-thumb="card.thumb" :book-titolo="card.series"  />
         </div>
 
         <div class="logosm">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img :src="links.img" alt=""></li>
+                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img :src="link.img" alt=""></li>
             </ul>
         </div>
     </main>
 </template>
 
 <script>
+import ImgDC from '../assets/img/buy-comics-digital-comics.png'
+import ImgDC1 from '../assets/img/buy-comics-merchandise.png'
+import ImgDC2 from '../assets/img/buy-comics-shop-locator.png'
+import ImgDC3 from '../assets/img/buy-comics-subscriptions.png'
+import ImgDC4 from '../assets/img/buy-dc-power-visa.svg'
 import CardDc from './CardDc.vue'
 /* eslint-disable */
 export default {
@@ -99,27 +104,27 @@ export default {
         ],
             links:[
             {
-                img:"../assets/img/buy-comics-digital-comics.png",
+                img: ImgDC,
                 href: '#',
                 text: 'CHARACTERS'
             },
             {
-                img:"../assets/img/buy-comics-digital-comics.png",
+                img:ImgDC1,
                 href: '#',
                 text: 'COMICS'
             },
             {
-                img: "../assets/img/buy-comics-digital-comics.png",
+                img: ImgDC2,
                 href: '#',
                 text: 'MOVIES'
             },
             {
-                img: "../assets/img/buy-comics-digital-comics.png",
+                img: ImgDC3,
                 href: '#',
                 text: 'TV'
             },
             {
-                img: "../assets/img/buy-comics-digital-comics.png",
+                img: ImgDC4,
                 href: '#',
                 text: 'GAMES'
             },
@@ -136,8 +141,8 @@ export default {
     box-sizing: border-box;
 }
 
-.voa{
-
+.card{
+    background-color: black;
     max-width:900px ;
     margin: 0 auto;
     display: flex;
@@ -146,7 +151,7 @@ export default {
     flex-wrap:wrap;
 }
 
-.container {
+.jambo {
     background-image:url("../assets/img/jumbotron.jpg");
     background-size: cover;
     color: white;
