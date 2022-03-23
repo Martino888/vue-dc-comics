@@ -76,14 +76,14 @@ a{
 }
 
 img{
-    overflow: hidden;
+    height: 30rem;
+    object-fit: center;
 }
 
 footer{
     display:flex;
     background-image: url("../assets/img/footer-bg.jpg");
     background-size: cover;
-    justify-content: space-evenly;
     overflow: hidden;
 }
 </style>

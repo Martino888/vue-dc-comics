@@ -21,11 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
- body{
+  body{
+        font-family: sans-serif;
         margin:0;
         padding:0;
         box-sizing: border-box;
     }
-}
 </style>

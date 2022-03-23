@@ -3,7 +3,7 @@
         <div class="contain">
             <img class="logo" src="@/assets/img/dc-logo.png" alt="">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a></li>
+                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text.toUpperCase()}}</a></li>
             </ul>
         </div>
     </header>
@@ -19,43 +19,43 @@ export default {
             links:[
                 {
                 href: '#',
-                text: 'CHARACTERS'
+                text: 'characters'
             },
             {
                 href: '#',
-                text: 'COMICS'
+                text: 'comics'
             },
             {
                 href: '#',
-                text: 'MOVIES'
+                text: 'movies'
             },
             {
                 href: '#',
-                text: 'TV'
+                text: 'tv'
             },
             {
                 href: '#',
-                text: 'GAMES'
+                text: 'games'
             },
             {
                 href: '#',
-                text: 'COLLECTIBLES'
+                text: 'collectibles'
             },
             {
                 href: '#',
-                text: 'VIDEOS'
+                text: 'videos'
             },
             {
                 href: '#',
-                text: 'FANS'
+                text: 'fans'
             },
             {
                 href: '#',
-                text: 'NEWS'
+                text: 'news'
             },
             {
                 href: '#',
-                text: 'SHOPS'
+                text: 'shops'
             }
             ]
         }
@@ -85,16 +85,17 @@ export default {
 
     li{
         display:inline-block;
-        padding: 5px;
+        padding: 15px;
     }
 
     a{
         text-decoration:none;
-        color:black;
+        color:rgb(63, 61, 61);
+        font-size: x-small;
     }
 
     a:hover{
-        color:blue;
+        color:rgb(0, 119, 255);
     }
 
     .logo{
