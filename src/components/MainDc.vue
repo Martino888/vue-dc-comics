@@ -7,7 +7,7 @@
 
         <div class="logosm">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img :src="link.img" alt=""></li>
+                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img class="locandina" :src="link.img" alt=""></li>
             </ul>
         </div>
     </main>
@@ -140,15 +140,21 @@ export default {
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    background-color: black;
+}
 
 .card{
-    background-color: black;
-    max-width:900px ;
-    margin: 0 auto;
+    margin: 46px;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
     flex-wrap:wrap;
+    color: white;
+}
+
+.locandina {
+    width: 40px;
+    height: 40px;
+    align-items: center;
 }
 
 .jambo {
@@ -159,7 +165,7 @@ export default {
 }
 li{
     display:inline-block;
-    padding: 15px;
+    padding: 55px;
 }
 
 a{

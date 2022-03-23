@@ -19,6 +19,11 @@ export default {
     .container{
         width: calc(100% /6);
         margin-top: 100px;
-        background-color:black ;
+    }
+
+    img {
+        width: 178px;
+        height: 178px;
+
     }
 </style>
