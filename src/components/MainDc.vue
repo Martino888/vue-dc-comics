@@ -5,7 +5,7 @@
         </div>
         <div class="logosm">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a></li>
+                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}<img src="" alt=""></a></li>
             </ul>
         </div>
     </main>
@@ -20,22 +20,27 @@ export default {
             text:"--> Content goes here<--",
             links:[
             {
+                img:"../assets/img/buy-comics-digital-comics.png",
                 href: '#',
                 text: 'CHARACTERS'
             },
             {
+                img:"../assets/img/buy-comics-digital-comics.png",
                 href: '#',
                 text: 'COMICS'
             },
             {
+                img: "../assets/img/buy-comics-digital-comics.png",
                 href: '#',
                 text: 'MOVIES'
             },
             {
+                img: "../assets/img/buy-comics-digital-comics.png",
                 href: '#',
                 text: 'TV'
             },
             {
+                img: "../assets/img/buy-comics-digital-comics.png",
                 href: '#',
                 text: 'GAMES'
             },
@@ -52,17 +57,20 @@ export default {
     box-sizing: border-box;
 }
 
+h3{
+    margin-left: 10%;
+}
+
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: black;
     color: white;
     height: 70px;
 }
 li{
     display:inline-block;
-    padding: 5px;
+    padding: 15px;
 }
 
 a{
@@ -80,7 +88,7 @@ a{
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    background-color:blue;
+    background-color:rgb(7, 149, 206);
     color: white;
     height: 100px;
 }

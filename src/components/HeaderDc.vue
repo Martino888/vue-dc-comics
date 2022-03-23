@@ -79,7 +79,7 @@ export default {
     .container{
         display:flex;
         align-items:center;
-        justify-content: center;
+        justify-content: space-around;
         background-color: white;
     }
 
