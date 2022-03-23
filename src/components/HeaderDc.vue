@@ -1,7 +1,6 @@
 <template>
     <header>
-        <div class="header">.</div>
-        <div class="container">
+        <div class="contain">
             <img class="logo" src="@/assets/img/dc-logo.png" alt="">
             <ul>
                 <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a></li>
@@ -76,11 +75,12 @@ export default {
         height: 70px;
     }
 
-    .container{
+    .contain{
         display:flex;
         align-items:center;
         justify-content: space-around;
         background-color: white;
+        width: 100%;
     }
 
     li{
@@ -99,7 +99,7 @@ export default {
 
     .logo{
         width: 100px;
-        padding:5px;
+        padding:13px;
     }
 
     .here{

@@ -45,6 +45,7 @@
         </div>
         <img src="../assets/img/dc-logo-bg.png" alt="">
     </footer>
+
 </template>
 
 <script>
@@ -74,10 +75,15 @@ a{
     color: grey;
 }
 
+img{
+    overflow: hidden;
+}
+
 footer{
     display:flex;
     background-image: url("../assets/img/footer-bg.jpg");
-    background-position-x: center;
+    background-size: cover;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 </style>

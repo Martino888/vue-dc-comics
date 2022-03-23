@@ -5,7 +5,7 @@
         </div>
         <div class="logosm">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}<img src="" alt=""></a></li>
+                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img :src="links.img" alt=""></li>
             </ul>
         </div>
     </main>
