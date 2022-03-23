@@ -43,7 +43,7 @@
                 <li><a href="#">DC Power Visa</a></li>
             </ul>
         </div>
-        <img src="../assets/img/dc-logo-bg.png" alt="">
+        <div class="footer_logo"></div>
     </footer>
 
 </template>
@@ -73,12 +73,17 @@ li{
 a{
     text-decoration: none;
     color: grey;
+    font-size: x-small;
 }
 
-img{
-    height: 30rem;
-    object-fit: center;
+.footer_logo {
+    background-image: url("../assets/img/dc-logo-bg.png");
+    background-position: center;
+    height: 365px;
+    width: 565px;
+    margin-left: 7%;
 }
+
 
 footer{
     display:flex;

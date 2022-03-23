@@ -1,10 +1,15 @@
 <template>
     <main>
         <div class="jambo"></div>
+        <div class="btn">
+            <button class="btin" href="">CURRENT SERIES</button>
+        </div>
         <div class="card">
             <CardDc v-for="card in cards" :key="card.series"  :book-thumb="card.thumb" :book-titolo="card.series"  />
         </div>
-
+        <div class="btn-more">
+            <button class="btin2" href="">LOAD MORE</button>
+        </div>
         <div class="logosm">
             <ul>
                 <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text}}</a><img class="locandina" :src="link.img" alt=""></li>
@@ -174,8 +179,39 @@ a{
     }
 
     a:hover{
-        color:blue;
+        color:rgb(7, 149, 206);
     }
+
+.btn{
+        background: rgb(7, 149, 206);
+    display: inline-block;
+    height: 33px;
+    margin-left: 46px;
+}
+
+.btin{
+        padding: 10px;
+    color: white;
+    background-color: rgb(7, 149, 206);
+    border:none;
+    font-size:30px;
+}
+
+.btin2{
+        padding: 10px;
+    color: white;
+    background-color: rgb(7, 149, 206);
+    border:none;
+    margin-bottom: 20px;
+        width: 200px;
+}
+
+.btn-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .logosm{
     display: flex;

@@ -3,6 +3,7 @@
     <HeaderDc />
     <MainDc />
     <FooterMain />
+    <FooterMain2 />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import HeaderDc from './components/HeaderDc.vue'
 import MainDc from './components/MainDc.vue'
 import FooterMain from './components/FooterMain.vue'
+import FooterMain2 from './components/FooterMain2.vue'
 export default {
   name: 'App',
   components: {
     HeaderDc,
     MainDc,
-    FooterMain
+    FooterMain,
+    FooterMain2
   }
 }
 </script>

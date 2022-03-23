@@ -3,7 +3,7 @@
         <div class="contain">
             <img class="logo" src="@/assets/img/dc-logo.png" alt="">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.href">{{link.text.toUpperCase()}}</a></li>
+                <li v-for="(link, index) in links" :key="index" class="list_active"><a :href="link.href">{{link.text.toUpperCase()}}</a></li>
             </ul>
         </div>
     </header>
@@ -107,5 +107,19 @@ export default {
         width: 100%;
         background-color: black;
         color:white;
+    }
+
+    .list_active:hover {
+        color: rgb(0, 119, 255);
+        &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 5px;
+        background-color: rgb(0, 119, 255);
+        margin: auto;
+        margin-top: 2rem;
+            margin-bottom: -36px;
+    }
     }
 </style>
